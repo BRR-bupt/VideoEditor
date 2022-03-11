@@ -66,7 +66,7 @@ import Recorder from '../models/Recorder'
 import MediaRecorderRecorder from '../models/MediaRecorderRecorder'
 import ExportingCard from '../components/ExportingCard.vue'
 import { Project } from '../models/Project'
-// import { isSupportBrowser } from '../plugins/browser'
+import { isSupportBrowser } from '../plugins/browser'
 import Select from '../components/widget/Select.vue'
 import Modal from './widget/Modal.vue'
 
@@ -114,8 +114,8 @@ export default class RendererWindow extends Vue {
   // 检测浏览器是否支持SharedArrayBuffer
   // 因为ffmpeg渲染需要此功能
   get isSupportBrowser() {
-    // return isSupportBrowser()
-    return true
+    return isSupportBrowser()
+    // return true
   }
 
   get canvasStyle(): Partial<CSSStyleDeclaration> {

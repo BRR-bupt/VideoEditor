@@ -47,7 +47,7 @@ module.exports = {
   buildModules: ['@nuxt/typescript-build'],
 
   generate: {
-    dir: '../../dist'
+    dir: '../dist'
   },
 
   // https://github.com/nuxt/nuxt.js/issues/9224#issuecomment-893289291

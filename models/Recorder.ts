@@ -96,7 +96,7 @@ export default class Recorder {
     // data为unit8数组，待 检 查
     // 等待data获取完成
     // 获取ccapture录制的webm格式
-    this.capturer?.save()
+    // this.capturer?.save()
     const data = await this.writeWebm()
     this.isRecording = false
     // 将data传递给函数onEnd=>Encoder.encode(data)
