@@ -16,6 +16,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [{ src: '/static/js/ccapture.js/CCapture.all.min.js' }]
   },
   render: {
